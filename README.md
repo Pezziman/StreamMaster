@@ -46,12 +46,15 @@ CUSTOMIZATION:
 You can use the .psd templates however you like to. But if you need to move the position from texts that are going to be edited by the executable, you gotta edit their position in the respective html file. The same with the default font. This applies for text sizes and character images sizes. 
 
 CHANGELOG:<br>
-StreamMaster Ver 0.3<br>
+StreamMaster Ver 0.4<br>
 -Scroll has been fixed in the Top 8 Bracket tab.
 
-StreamMaster Ver 0.2<br>
+StreamMaster Ver 0.3<br>
 -A command prompt window no longer displays with the executable file. Only the GUI will be seen.
 
-StreamMaster Ver 0.1<br>
+StreamMaster Ver 0.2<br>
 -'Save All Changes' button has been moved from bottom to top. <br>
 -Optional bracket reset added: if clicked the bracket reset option will be added and will be shown in bracket screen. 
+
+StreamMaster Ver 0.1<br>
+-First functional version, archaic GUI
