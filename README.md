@@ -47,7 +47,8 @@ You can use the .psd templates however you like to. But if you need to move the 
 
 CHANGELOG:<br>
 StreamMaster Ver 0.4<br>
--Scroll has been fixed in the Top 8 Bracket tab.
+-Scroll has been fixed in the Top 8 Bracket tab.<br>
+-Added more relevant information regarding who is who in 'Bracket Control'
 
 StreamMaster Ver 0.3<br>
 -A command prompt window no longer displays with the executable file. Only the GUI will be seen.
