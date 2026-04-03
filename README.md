@@ -46,6 +46,9 @@ CUSTOMIZATION:
 You can use the .psd templates however you like to. But if you need to move the position from texts that are going to be edited by the executable, you gotta edit their position in the respective html file. The same with the default font. This applies for text sizes and character images sizes. 
 
 CHANGELOG:<br>
+StreamMaster Ver 0.5<br>
+-Compiled icon to executable file, though not in the window lmao
+
 StreamMaster Ver 0.4<br>
 -Scroll has been fixed in the Top 8 Bracket tab.<br>
 -Added more relevant information regarding who is who in 'Bracket Control'
