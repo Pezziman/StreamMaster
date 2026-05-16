@@ -295,8 +295,14 @@ class StreamMasterApp:
         outer = ttk.Frame(parent)
         outer.pack(fill="both", expand=True)
 
-        btn = ttk.Button(outer, text="Save All Changes", command=self.save_all)
-        btn.pack(pady=5, padx=5, anchor='center')
+        btn_row = ttk.Frame(outer)
+        btn_row.pack(pady=5, padx=5)
+
+        btn_save = ttk.Button(btn_row, text="Save All Changes", command=self.save_all)
+        btn_save.pack(side="left", padx=5)
+
+        btn_swap = ttk.Button(btn_row, text="Swap Sides", command=self.swap_scoreboard_sides)
+        btn_swap.pack(side="right", padx=5)
 
         canvas = tk.Canvas(outer, highlightthickness=0)
         scrollbar = ttk.Scrollbar(outer, orient="vertical", command=canvas.yview)
@@ -680,6 +686,32 @@ class StreamMasterApp:
         self.refresh_bracket_control_tab()
 
         save_data(self.data)
+    
+    def swap_scoreboard_sides(self):
+        p1_widgets = [
+            self.entry_p1_name,
+            self.entry_p1_team,
+            self.entry_p1_score,
+            self.entry_p1_country
+        ]
+        p2_widgets = [
+            self.entry_p2_name,
+            self.entry_p2_team,
+            self.entry_p2_score,
+            self.entry_p2_country
+        ]
+
+        p1_values = [widget.get() for widget in p1_widgets]
+        p2_values = [widget.get() for widget in p2_widgets]
+
+        for widget, value in zip(p1_widgets, p2_values):
+            widget.delete(0, tk.END)
+            widget.insert(0, value)
+        for widget, value in zip(p2_widgets, p1_values):
+            widget.delete(0, tk.END)
+            widget.insert(0, value)
+
+        self.save_all()
 
 if __name__ == "__main__":
     try:
