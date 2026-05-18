@@ -17,8 +17,6 @@ Winner should be 1920x1080 <br>
 Bracket should be 1920x1080 <br>
 Results should be 1920x1080 <br> 
 
-If font is not properly loaded, install it to your system and that should fix it. It is inside 'Templates'.
-
 After proper setup, open StreamMaster.exe. GUI is a little archaic.
 
 SCOREBOARD: <br>
